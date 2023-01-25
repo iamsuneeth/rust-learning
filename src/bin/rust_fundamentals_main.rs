@@ -1,13 +1,11 @@
 use std::env;
 
-mod box_sum;
-mod count_words;
-mod display_trait;
-mod find_name;
-mod guess_random;
-mod guess_random_handle_error;
-mod location;
-mod shape;
+mod rust_fundamentals;
+
+use rust_fundamentals::{
+    box_sum, count_words, display_trait, find_name, guess_random, guess_random_handle_error,
+    location, shape,
+};
 
 fn main() {
     if env::args().len() < 2 {
